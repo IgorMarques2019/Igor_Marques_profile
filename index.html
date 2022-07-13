@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#110011">
+  <link rel="shortcut icon" href="./img/logodark.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fontes -->
+  <title>Igor Marques - Portfólio</title>
+</head>
+
+<body>
+  <div class="progress"></div>
+  <header>
+    <img src="./img/logo light.png" alt="logo" class="logo">
+    <img class="menu-icon" src="./img/icons/menu-closed.png" alt="">
+
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#about-me">Sobre Mim</a></li>
+        <li class="trabalhos">Trabalhos
+
+          <ul class="submenu">
+            <li><a href="#tiposSites">Orçamento</a></li>
+            <li><a href="#projetos">Projetos realizados</a></li>
+          </ul>
+
+        </li>
+
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="banner-principal" aria-label="banner principal">
+    <div id="bg-principal">
+      <h3>Olá 👋​, eu sou</h3>
+      <h1 class="text-g-t ">Igor Marques</h1>
+      <p>Desenvolvedor Front End</p>
+    </div>
+  </section>
+  <main class="container">
+
+    <article class="" id="about-me" aria-label="sobre mim">
+      <section class="js-scroll" id="about-sec" aria-labelledby="about">
+        <h2 class="text-g-st" id="about">🧐​ Sobre Mim</h2>
+        <p>Me chamo Igor, tenho 22 anos, por volta dos meus 14 anos, enquanto navegava na internet, me questionei sobre como as coisas funcionavam, por que o site é assim e como ele se comporta?
+          então soube que esse trabalho é perfeito para mim, já que sou uma pessoa curiosa e também gosto de inventar.</p>
+      </section>
+
+      <section class="js-scroll" id="exp-sec" aria-labelledby="title-exp">
+        <h2 class="text-g-st" id="title-exp">Experiência 👨‍🚀​</h2>
+        <p>Atualmente trabalho como assistente administrativo, mas por fora eu trabalho como freelancer há mais 2 anos, ainda estou no processo de aprendizado.</p>
+      </section>
+      <section></section>
+    </article>
+  </main>
+
+  <section class="help-business" aria-label="Quero ajudar seu negócio">
+    <div class="content-help-business">
+      <div class=" js-scroll info-business">
+        <h2>Quero te ajudar no seu Negócio</h2>
+        <p>Usarei tudo que tenho para proporcionar uma melhor experiência na construção do seu site.</p>
+      </div>
+      <div class="bs-img">
+        <img class="" src="./img/business.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  <section id="projetos" aria-label="Meus Projetos">
+
+    <h2 class="text-g-st ">Projetos</h2>
+
+    <div class="container-proj">
+      <div class="proj-card js-scroll">
+        <img src="./img/moneygame.png" alt="">
+        <div class="desc-card-projeto">
+          <h3>Money Game</h3>
+          <p>Projeto criado para treinar createElement() do javascript, seu principal objetivo no jogo é comprar franquias e cada vez mais expandir seu império lucrativo</p>
+        </div>
+      </div>
+
+      <div class="proj-card js-scroll">
+        <img src="./img/peakyblinders.png" alt="">
+        <div class="desc-card-projeto">
+          <h3>Netflix Clone</h3>
+          <p>Projeto criado para treinar a navegação de tab do javascript, permitindo o usuário a navegar por várias seções do site com clique.</p>
+        </div>
+      </div>
+
+      <div class="proj-card js-scroll">
+        <img src="./img/timer.png" alt="">
+        <div class="desc-card-projeto">
+          <h3>Timer</h3>
+          <p>Um pequeno timer, criei para treinar manipulação do Dom usando javascript</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="title-start" id="startText">
+    <h2 class="js-scroll" id="title-start">Vamos Começar ?</h2>
+  </section>
+
+  <section id="tiposSites" class="type-sites" aria-label="Tipos de sites">
+
+
+    <div class="container-typeSites">
+
+      <div class=" page landing-page">
+        <img src="./img/icons/langing-page.png" alt="">
+        <h3 class="text-g-st">Landing Page</h3>
+        <p>Este tipo de página é utilizada para captura clientes (leads)</p>
+      </div>
+
+      <div class=" page institucional">
+        <img src="./img/icons/institucional.png" alt="">
+        <h3 class="text-g-st">Site Institucional</h3>
+        <p>Sites Institucionais, são sites criados para apresentar o seu negócio, falar sobre os seus serviços prestados, etc.</p>
+      </div>
+
+
+      <div class=" page institucional">
+        <img src="./img/icons/one_page.png" alt="">
+        <h3 class="text-g-st">One Page</h3>
+        <p>Site com com a finalidade de vender um produto na internet por exempo, um curso hotmart.</p>
+      </div>
+
+
+
+
+
+    </div>
+    <p>Por R$ 45/hr Posso fazer um site para você ou então entre em contato para conversarmos.</p>
+  </section>
+
+  <section id="contato" aria-label="Contato">
+    <div class="content-contato">
+      <h2 class="js-scroll">Fale Comigo</h2>
+      <form action="https://formsubmit.co/igorclash2345@gmail.com" method="POST">
+        <input autocomplete="off" required type="text" placeholder="Nome" name="Nome" id="">
+        <input autocomplete="off" type="text" placeholder="Sobrenome" name="Sobrenome" id="">
+
+        <input autocomplete="off" required placeholder="Seu Melhor Email.." type="email" name="E-mail" id="">
+        <textarea autocomplete="off" required placeholder="Assunto" name="Assunto" id="" cols="30" rows="10"></textarea>
+        <div class="form-buttons">
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Resetar">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="js.js"></script>
+</body>
+
+</html>

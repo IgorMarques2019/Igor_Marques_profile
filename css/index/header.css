@@ -1,0 +1,224 @@
+
+header {
+  background-color:transparent;
+  display: flex;
+  place-content: center space-around;
+  place-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 40px;
+  position:fixed;
+  top:0;
+  width:100%;
+  transition:0.6s;
+  z-index:8;
+}
+
+.header-dark {
+  transition:0.6s;
+  background-color:var(--cl-02);
+}
+
+
+
+header img {
+  max-width: 32px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+nav>ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li,
+nav ul li a {
+  color: white;
+}
+
+nav ul li:hover {
+  cursor: pointer
+}
+
+
+
+nav>ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+nav>ul li:nth-child(3):hover::after {
+  display: none;
+}
+
+nav ul> li:hover::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+
+}
+
+
+.trabalhos {
+  position: relative;
+  transition: .5s;
+}
+
+.submenu::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  background-color: var(--cl-01);
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.submenu {
+  position: absolute;
+  top: calc(100% + 10px);
+  background-color: var(--cl-01);
+  padding: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.trab-ativo .submenu {
+  display: block;
+  animation: animMenu 0.5s forwards;
+
+}
+
+.submenu li+li {
+  margin-top: 10px;
+}
+
+.submenu li a {
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+@keyframes animMenu {
+  from {
+    opacity: 0;
+    transform: translate3d(-50%, -20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3D(-50%, 0px);
+  }
+}
+
+@media screen and (max-width:480px) {
+
+  header {
+    place-content: start space-between;
+  
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  header nav {
+    width: 100%;
+    display: none;
+  }
+
+  header nav ul {
+    display: block;
+  }
+
+  nav ul li a,
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  nav ul li {
+    padding: 12px;
+  }
+  .trabalhos:hover {
+    background: linear-gradient(to right, #EF5F67, #C62368);
+  }
+
+  .submenu {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color:inherit;
+  }
+
+  nav ul> li:hover::after,li::after {
+    display:none;
+  }
+
+  .submenu li:active {
+    background-color: white;
+    color: black;
+  }
+
+  nav li {
+    border: 1px solid white;
+  }
+
+  nav li {
+    margin-top: 20px;
+  }
+
+  .submenu li:active a {
+    color: black;
+  }
+
+  .submenu::before {
+    display: none;
+  }
+
+  .nav-ativo {
+    height: 100vh;
+    background-color:var(--cl-02);
+  }
+
+  .nav-ativo nav {
+    display: block;
+  }
+
+  .over-hidden {
+    overflow: hidden;
+  }
+}
+.menu-open {
+animation:menuOpen 0.6s forwards;
+}
+@keyframes menuOpen {
+
+  from {
+    transform:rotate(0);
+  }
+
+  to {
+    transform:rotate(360deg);
+  }
+}

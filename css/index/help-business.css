@@ -1,0 +1,136 @@
+
+.bs-img {
+  max-width: 370px;
+  height: 100%;
+}
+
+.bs-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.help-business {
+  height: 576px;
+  background: url("../../img/bg-business.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.content-help-business {
+  box-shadow: inset 0px 60px 0px #110011, inset 0px -60px 0px #110011;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  place-content: center;
+  background-color: #110011e9;
+  backdrop-filter:blur(2px);
+  width: 100%;
+  height: 100%;
+}
+
+.info-business {
+  padding: 60px;
+}
+
+.info-business h2 {
+  font-size: 4rem;
+  font-family: "Yeseva One";
+  font-weight: 400;
+  color: white;
+}
+
+.info-business p {
+  font-size: 1.25rem;
+  line-height: 35px;
+}
+
+.info-business h2,
+.info-business p {
+  text-align: left;
+}
+
+.info-business p {
+  color:#d8d8d8;
+}
+
+
+@media screen and (max-width:1280px) {
+  .info-business h2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width:1010px) {
+  .bs-img {
+    display: none;
+  }
+
+  .info-business {
+    padding: 60px 40px;
+    
+  }
+
+  .info-business h2, .info-business p {
+    text-align: center;
+  }
+
+  .help-business {
+    height: auto;
+  }
+
+  .content-help-business {
+    box-shadow: none;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width:880px) {
+  .info-business h2 {
+    font-size: 2.60rem;
+  }
+
+  .info-business p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:780px) {
+  .info-business h2 {
+    font-size: 2.20rem;
+  }
+}
+
+@media screen and (max-width:680px) {
+  .info-business h2 {
+    font-size: 1.90rem;
+  }
+
+  .info-business p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width:565px) {
+  .info-business h2 {
+    font-size: 1.40rem;
+  }
+
+  .info-business p {
+    font-size:14px;
+    line-height:24.5px;
+    text-align:justify;
+    word-break: break-all;
+  }
+}
+@media screen and (max-width:480px) {
+  .info-business h2 {
+    font-size:18px;
+  }
+
+  .info-business p {
+    font-size:14px;
+    line-height:24.5px;
+    text-align:justify;
+    word-break: break-all;
+  }
+}

@@ -1,0 +1,150 @@
+
+#contato {
+  width: 100%;
+  height: 100vh;
+  background: url('../../img/contact.jpg');
+  background-size: cover;
+}
+
+#contato .content-contato {
+  background: #90215cda;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  place-content: center;
+  place-items: center;
+  padding: 40px;
+}
+
+#contato h2 {
+  font-size: 6rem;
+  font-weight: 400;
+  font-family: "Yeseva One";
+  color: white;
+  max-width: 4ch;
+}
+
+#contato form>input {
+  border: none;
+  padding: 12px;
+}
+
+#contato form {
+  place-self: end;
+  max-width: 620px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#contato input:nth-child(3),
+#contato textarea,
+#contato .form-buttons {
+  grid-column: 1 / -1;
+}
+
+#contato textarea {
+  padding: 12px;
+  max-height: 100px;
+  display: block;
+  resize: none;
+}
+
+#contato textarea::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+#contato .form-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  place-content: center;
+  gap: 10px;
+}
+
+.form-buttons input {
+  width: 100%;
+  padding: 16px;
+}
+
+.form-buttons input:hover {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#contato form>* {
+  color: var(--cl-01);
+  border-radius: 4px;
+}
+
+input[type="reset"] {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+input[type="reset"]:hover {
+  background: linear-gradient(to right, #EF5F67, #C62368);
+  border: 1px solid #C62368;
+}
+
+input[type="submit"] {
+  background: #07ff83;
+  border: none;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(to right, #07ff83, #0dd772);
+  transition: 0.3s;
+}
+
+
+#contato *:focus {
+  outline: none;
+
+}
+
+@media screen and (max-width:1170px) {
+  #contato h2 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width:1110px) {
+  #contato .content-contato {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media screen and (max-width:1020px) {
+  #contato .content-contato {
+    grid-template-columns: 1fr;
+    gap: 80px;
+    place-items: center;
+    place-content: center;
+  }
+
+  .content-contato form {
+    place-self: center !important;
+    grid-template-columns: 1 / -1;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:720px) {
+  #contato h2 {
+    font-size: 2rem;
+    max-width: max-content;
+  }
+}
+
+@media screen and (max-width:380px) {
+  #contato form {
+    grid-template-columns:1fr;
+  }
+}

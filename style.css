@@ -1,0 +1,13 @@
+@import url("./css/global.css");
+@import url("./css/colors.css");
+@import url("./css/tipografia.css");
+
+
+@import url("./css/index/header.css");
+@import url("./css/index/banner-principal.css");
+@import url("./css/index/about-me.css");
+@import url("./css/index/help-business.css");
+@import url("./css/index/meus-projetos.css");
+@import url("./css/index/lets-start.css");
+@import url("./css/index/type-pages.css");
+@import url("./css/index/contato.css");

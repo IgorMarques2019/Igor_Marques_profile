@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 #contato {
   width: 100%;
@@ -10,7 +17,9 @@
   background: #90215cda;
   height: 100%;
   width: 100%;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 2fr;
   grid-template-columns: 1fr 2fr;
   place-content: center;
   place-items: center;
@@ -31,10 +40,14 @@
 }
 
 #contato form {
+  -ms-grid-row-align: end;
+  -ms-grid-column-align: end;
   place-self: end;
   max-width: 620px;
   width: 100%;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 10px 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
@@ -58,8 +71,11 @@
 
 
 #contato .form-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   place-content: center;
   gap: 10px;
 }
@@ -71,6 +87,8 @@
 
 .form-buttons input:hover {
   cursor: pointer;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -86,6 +104,8 @@ input[type="reset"] {
 }
 
 input[type="reset"]:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#EF5F67), to(#C62368));
+  background: -o-linear-gradient(left, #EF5F67, #C62368);
   background: linear-gradient(to right, #EF5F67, #C62368);
   border: 1px solid #C62368;
 }
@@ -97,7 +117,11 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#07ff83), to(#0dd772));
+  background: -o-linear-gradient(left, #07ff83, #0dd772);
   background: linear-gradient(to right, #07ff83, #0dd772);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -115,6 +139,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width:1110px) {
   #contato .content-contato {
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -122,6 +147,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width:1020px) {
   #contato .content-contato {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 80px;
     place-items: center;
@@ -129,7 +155,10 @@ input[type="submit"]:hover {
   }
 
   .content-contato form {
+    -ms-grid-row-align: center !important;
+    -ms-grid-column-align: center !important;
     place-self: center !important;
+    -ms-grid-columns: 1 / -1;
     grid-template-columns: 1 / -1;
     max-width: 100%;
     width: 100%;
@@ -139,12 +168,20 @@ input[type="submit"]:hover {
 @media screen and (max-width:720px) {
   #contato h2 {
     font-size: 2rem;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
     max-width: max-content;
+  }
+
+  #contato form {
+    -ms-grid-columns:1fr;
+    grid-template-columns:1fr;
   }
 }
 
 @media screen and (max-width:380px) {
   #contato form {
+    -ms-grid-columns:1fr;
     grid-template-columns:1fr;
   }
 }

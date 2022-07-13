@@ -1,44 +1,45 @@
-
 #startText {
   height: 100vh;
   width: 100%;
   background: url('../../img/start.jpg') no-repeat;
   background-position: start;
-  background-attachment:fixed;
+  background-attachment: fixed;
+  background-size: cover;
   display: flex;
   place-content: center;
   place-items: center;
 }
 
 
-#title-start  {
+#title-start {
   color: white;
-  font-size:4rem;
+  font-size: 4rem;
 }
 
 #title-start::after {
-  content:"";
-  width:50%;
-  height:4px;
-  background-color:#EF5F67;
-  display:block;
-  margin:0 auto;
+  content: "";
+  width: 50%;
+  height: 4px;
+  background-color: #EF5F67;
+  display: block;
+  margin: 0 auto;
 }
 
 
 @media screen and (max-width:870px) {
   #title-start {
-    font-size:3rem;
+    font-size: 3rem;
   }
 }
 
 @media screen and (max-width:540px) {
   #title-start {
-    font-size:2.37rem;
+    font-size: 2.37rem;
   }
 }
+
 @media screen and (max-width:480px) {
   #title-start {
-    font-size:2rem;
+    font-size: 2rem;
   }
 }
